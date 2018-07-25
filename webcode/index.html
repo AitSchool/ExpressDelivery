@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>小猪快递查询</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="user-info">
+            <img class="user-avatar" src="./avatar.png">
+            <span class="user-nickName">张三</span>
+        </div>
+        <nav class="page-nav">
+             <a href="./index.html">首页</a>
+             <a href="./history.html">历史</a>
+        </nav>
+    </header>
+    <div class="page-body">
+        <div class="form-section">
+            <div class="container">
+                <h1 class="h1">小猪快递查询</h1>
+                <form class="form-list">
+                    <div class="form-item">
+                        <select class="form-item-select" name="company">
+                            <option disabled selected value="0">请选择</option>
+                            <option value="ems">EMS</option>
+                            <option value="shunfeng">顺丰</option>
+                            <option value="yuantong">圆通</option>
+                            <option value="zhongtong">中通</option>
+                            <option value="shentong">申通</option>
+                            <option value="huitongkuaidi">汇通</option>
+                            <option value="yunda">韵达</option>
+                            <option value="debangwuliu">德邦</option>
+                        </select>
+                        <span class="form-item-error">请选择快递公司</span>
+                    </div>
+                    <div class="form-item">
+                        <input placeholder="请输入订单号" class="form-item-input" type="number" name="order" />
+                        <span class="form-item-error">请输入订单号</span>
+                    </div>
+                    <div class="form-item">
+                        <button id="submit">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <p>Copyright  2018 扎克斯未来体验技术部出品</p>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

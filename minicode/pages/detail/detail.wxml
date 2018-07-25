@@ -1,0 +1,30 @@
+<view class="view-container">
+    <view class="page-header">
+        <view class="user-info">
+            <image class="user-avatar" src="/images/avatar.png"></image>
+            <text class="user-nickName">张三</text>
+        </view>
+        <view class="page-nav">
+             <navigator url="/pages/history/history">历史</navigator>
+        </view>
+    </view>
+    <view class="page-body">
+        <view class="detail-section">
+            <view class="container">
+                <view class="detail-info">
+                    <text class="detail-campany">{{company}}</text>
+                    <text class="detail-id">{{order_id}}</text>
+                </view>
+                <view class="detail-progress-list">
+                    <view class="detail-progress-item" wx:for="{{detailList}}" wx:key="unique"  wx:for-item="detail">
+                        <view class="detail-progress-time">{{detail.time}}</view>
+                        <view class="detail-progress-address">{{detail.context}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="page-footer">
+        <view>Copyright  2018 扎克斯未来体验技术部出品</view>
+    </view>
+</view>

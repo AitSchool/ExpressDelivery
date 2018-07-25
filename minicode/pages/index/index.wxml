@@ -1,0 +1,34 @@
+<view class="view-container">
+    <view class="page-header">
+        <view class="user-info">
+            <image class="user-avatar" src="/images/avatar.png"></image>
+            <text class="user-nickName">张三</text>
+        </view>
+        <view class="page-nav">
+             <navigator url="/pages/history/history">历史</navigator>
+        </view>
+    </view>
+    <view class="page-body">
+        <view class="form-section">
+            <view class="container">
+                <view class="h1">小猪快递查询</view>
+                <view class="form-list">
+                    <view class="form-item">
+                        <picker class="form-item-select" bindchange="bindPickerChange" value="{{selectIndex}}" range="{{deliveryArr}}" range-key="name">
+                            {{deliveryArr[selectIndex].name}}
+                        </picker>
+                    </view>
+                    <view class="form-item">
+                        <input class="form-item-input" placeholder="请输入订单号" type="number" name="order" bindinput="bindOrderInput"  value="{{inputValue}}" />
+                    </view>
+                    <view class="form-item">
+                        <button type="primary" bindtap="submit">提交</button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="page-footer">
+        <view>Copyright  2018 扎克斯未来体验技术部出品</view>
+    </view>
+</view>

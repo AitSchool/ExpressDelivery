@@ -1,0 +1,25 @@
+<view class="view-container">
+    <view class="page-header">
+        <view class="user-info">
+            <image class="user-avatar" src="/images/avatar.png"></image>
+            <text class="user-nickName">张三</text>
+        </view>
+    </view>
+    <view class="page-body">
+        <view class="history-section">
+            <view class="container">
+                <view class="history-list">
+                    <view class="history-item" wx:for="{{history_data}}" wx:key="unique" 
+                        data-order_id="{{index}}" data-company="{{item}}" 
+                        bindtap="goDetail">
+                        <view>{{item}}</view>
+                        <view>{{index}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="page-footer">
+        <view>Copyright  2018 扎克斯未来体验技术部出品</view>
+    </view>
+</view>

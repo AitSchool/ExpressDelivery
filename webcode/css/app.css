@@ -1,0 +1,169 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+    color: #333;
+}
+
+.page-body{
+    flex: 1;
+}
+
+.page-header{
+    padding: 5px 10px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.user-info{
+    display: inline-block;
+}
+
+.user-info .user-avatar{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.user-info .user-nickName{
+    vertical-align: middle;
+}
+
+.page-nav{
+    float: right;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+
+.container{
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.page-footer{
+    font-size: 12px;
+    line-height: 40px;
+    text-align: center;
+    color: #999;
+    letter-spacing: .5px;
+}
+
+
+/* 首页表单模块 */
+.form-section{
+    padding-top: 120px;
+}
+
+/* 主标题 */
+.form-section .h1{
+    text-align: center;
+    font-size: 32px;
+}
+
+/* 首页表单 */
+.form-section .form-list{
+    padding: 30px;
+}
+
+/* 首页表单-项 */
+.form-section .form-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* 首页-表单-选择输入*/
+.form-section .form-item-select,.form-section .form-item-input{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    padding-left: 15px;
+    border: 1px solid #e4e4e4;
+}
+
+/* 首页-表单-错误提示 */
+.form-section .form-item-error{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    color: red;
+}
+
+/* 首页-表单-提交按钮 */
+.form-section .form-item button{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    border: 1px solid #e4e4e4;
+}
+
+.detail-section{
+    padding-top: 120px;
+}
+
+/* 详情-副标题 */
+.detail-section .detail-info{
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* 详情-列表 */
+.detail-section .detail-progress-list{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* 详情-列表项 */
+.detail-section .detail-progress-item{
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+/* 详情-时间 */
+.detail-section .detail-progress-time{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* 详情-位置内容 */
+.detail-section .detail-progress-address{
+    color: #666;
+}
+
+/* 历史模块 */
+.history-section{
+    padding: 60px 30px;
+}
+
+/* 历史-表格 */
+.history-section table{
+    width: 100%;
+    text-align: left;
+}
+
+/* 历史-表格-表头 */
+.history-section th{
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* 历史-表格-单元 */
+.history-section td{
+    padding: 8px;
+    font-size: 14px;
+}
